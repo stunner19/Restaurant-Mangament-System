@@ -28,7 +28,7 @@ const mapDispatchToProps = dispatch => ({
   // The call, this is a thunk, and so we can dispatch that punk by using dispatch and in order to do the dispatch, I need to map it in the 
   // DispatchToProp so that dispatch dishes becomes available for my main component to make use of. So, in the main component I need to fetch
   // the dishes.
-  resetFeedbackForm: () => { dispatch(actions.reset('feedback'))}
+  resetFeedbackForm: () => { dispatch(actions.reset('feedback'))},
   // So the form will be named as feedback and so these actions that we import from React-Redux-Form adds in the necessary actions for 
   // resetting the form which we will label as "feedback." So the corresponding model will be called feedback.
   fetchComments: () => dispatch(fetchComments()),

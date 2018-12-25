@@ -8,7 +8,7 @@ import { baseUrl } from '../shared/baseUrl';
         return (
             <Card>
                 <Link to={`/menu/${dish.id}`} >
-                    <CardImg width="100%" src={baseUrl + dish.image} alt={dish.name} /> 
+                    <CardImg top src={baseUrl + dish.image} alt={dish.name} /> 
                      {/* fetching the image from the server-side . So we'll be fetching the image from the server before rendering the items here. 
                      Instead of using the images that are configured in our application. Because that is how we want it to be, because if the 
                      dishes in the server is updated, then I don't want to suddenly realize that the corresponding image doesn't exist in my 
