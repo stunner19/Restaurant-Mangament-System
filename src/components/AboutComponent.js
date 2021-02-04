@@ -32,7 +32,7 @@ function About(props) {
     });
 
     return(
-        <div className="container">
+        <div className="container" data-testid="about">
             <div className="row">
                 <Breadcrumb>
                     <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
@@ -50,7 +50,7 @@ function About(props) {
                     <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
                 </div>
                 <div className="col-12 col-md-5">
-                    <Card>
+                    <Card data-testid = "card">
                         <CardHeader className="bg-primary text-white">Facts At a Glance</CardHeader>
                         <CardBody>
                             <dl className="row p-1">
@@ -62,7 +62,7 @@ function About(props) {
                                 <dd className="col-6">$1,250,375</dd>
                                 <dt className="col-6">Employees</dt>
                                 <dd className="col-6">40</dd>
-                            </dl>
+                            </dl> 
                         </CardBody>
                     </Card>
                 </div>
